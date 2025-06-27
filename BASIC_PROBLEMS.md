@@ -102,3 +102,39 @@ ENTER THE VALUE OF N:
 THE OUTPUT IS: 3
 
 ````
+
+### CODE
+
+````JAVA
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	System.out.println("ENTER THE VALUE OF N: ");
+	int n=s.nextInt();
+	int rev=0;
+	while(n>0){
+	    int ld=n%10;
+	    if(ld%2!=0){
+	    rev=rev*10+ld;
+	    }
+	    n/=10;
+	}
+	
+	System.out.println("THE OUTPUT IS: " +rev);
+	
+		}
+	}
+````
+
+
+### OUTPUT
+
+````JAVA
+ENTER THE VALUE OF N: 
+12345
+THE OUTPUT IS: 531
+
+````
