@@ -60,3 +60,45 @@ ENTER THE VALUE OF N:
 THE OUTPUT IS: 5
 
 ````
+
+### CODE
+
+````JAVA
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	System.out.println("ENTER THE VALUE OF N: ");
+	int n=s.nextInt();
+	 n=Math.abs(n);
+	int c=0;
+	
+	if(n==0){
+	    c=1;
+	}
+	
+	while(n>0){
+	    int ld=n%10;   //TAKES THE LAST DIGIT
+	    if(ld==0){       // IF IT IS 0- THEN COUNT INCREMENTS 
+	        c++;
+	    }
+	    n/=10; // REMOVES THE LAST DIGIT
+	}
+	System.out.println("THE OUTPUT IS: "+c);
+	
+		}
+	}
+
+
+````
+
+
+### OUTPUT
+
+````JAVA
+ENTER THE VALUE OF N: 
+8990002
+THE OUTPUT IS: 3
+
+````
