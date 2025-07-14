@@ -31,6 +31,15 @@ public class Main {
     }
 }
 
+
+if u are printing the string then use
+//
+StringBuilder result = new StringBuilder();
+for (char c : ss) {
+    result.append(c);
+}
+System.out.println("THE OUTPUT STRING IS: " + result.toString());
+//
 ````
 
 
@@ -40,3 +49,6 @@ public class Main {
 ENTER THE STRING: leet***co*de
 THE OUTPUT STRING IS: [l, c, d, e]
 ````
+
+
+
